@@ -1,0 +1,181 @@
+/*
+	General classes
+*/
+
+.marginTop15{
+	margin-top: 15%;
+}
+
+.marginTop5{
+	margin-top: 5%;
+}
+
+.marginTop2{
+	margin-top: 2%;
+}
+
+.paddingTop2{
+	padding-top: 2%;
+}
+
+.paddingTop5{
+	padding-top: 5%;
+}
+
+/*	
+	Html class
+*/
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+/*	
+	Body class
+*/
+
+body{
+	padding-top: 50px;
+	margin-bottom: 100px;
+}
+
+/*
+	Loading screen
+*/
+
+#loadingScreen{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(233, 233, 242);
+	opacity: 0.8;
+	z-index: 2000;
+	position: fixed;
+	margin-top: -50px;
+}
+
+#loadingIcon{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+
+/*
+	Nav bar classes
+*/
+
+.navbar-default{
+	background-color: black;
+}
+
+.navbar .nav > li > a,.navbar .nav > li > a:visited{
+	color: white;
+}
+
+.links > li > a:hover{
+	font-size: 20px;
+	color: white;
+}
+
+/*
+	Footer classes
+*/
+
+.footer{
+	background-color: rgb(20, 121, 188);
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+	height: 100px;
+	text-align: center;
+	padding-top: 34px;
+}
+
+.footer .glyphicon{
+	font-size: 32px;
+}
+
+.footer span{
+	color: white;
+}
+
+/*
+	Home page classes
+*/
+
+.mainText{
+	margin-top: 5%;
+}
+
+/*
+	About page classes
+*/
+
+.aboutContainer{
+	padding: 5% 0%;
+}
+
+/*
+	Bio page classes
+*/
+
+.bornContainer{
+	background-image: url("/img/alhambra.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:white;
+	padding-top: 3%;
+}
+
+.msDosContainer{
+	background-image: url("/img/ms-dos.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:black;
+	padding-top: 3%;
+}
+
+.uniContainer{
+	background-image: url("/img/uni.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 13%;
+	color: white;
+}
+
+.webDevContainer{
+	background-image: url("/img/web_dev.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 3%;
+}
+
+/*
+	Skills page classes
+*/
+
+.skillsBackground{
+	background-image: url("/img/skills.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.skillsContainer ul{
+	color: rgb(113, 131, 255);
+}
+
+/*
+	Experience page classes
+*/
+
+.experienceBackground{
+	background-image: url("/img/experience.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.experienceContainer{
+	padding-top:5%;
+}

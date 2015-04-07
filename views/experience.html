@@ -1,0 +1,46 @@
+<div>
+	<div class="container-fluid experienceContainer">
+		<div class="panel-group" id="expPG">
+			<div data-ng-repeat="exp in expRecords" class="panel panel-default">
+				<div class="panel-heading">
+				    <h3 class="panel-title">
+				    	<a data-ng-cloak data-toggle="collapse" href="#" data-target="#body{{exp.companyOrder}}" data-parent="#expPG">
+				    		{{exp.companyName}} ({{exp.startDate}} - {{exp.endDate}})
+				    	</a>
+				    </h3>
+			  	</div>
+			  	<div class="panel-body collapse" id="body{{exp.companyOrder}}">
+			  		<div class="container">
+			  			<div class="row">
+			  				<div class="col-md-3">
+						    	<ul>
+							    	<li data-ng-cloak>{{labels.jobTitle}}: {{exp.jobTitle}}</li>
+							    	<li data-ng-cloak>{{labels.location}}: {{exp.location}}</li>
+							    	<li data-ng-cloak>{{labels.duties}}:
+							    		<ul>
+							    			<li data-ng-cloak data-ng-repeat="duty in exp.duties">{{duty.item}}</li>
+							    		</ul>
+							    	</li>
+							    	<li data-ng-cloak data-ng-show="exp.projects.length > 0">{{labels.projects}}:
+							    		<ul>
+							    			<li data-ng-repeat="project in exp.projects">
+							    				<a data-ng-cloak href="{{project.link}}" target="_blank">
+										    		{{project.item}}
+										    	</a>
+							    			</li>
+							    		</ul>
+							    	</li>
+							    </ul>
+							</div>
+							<div class="col-md-offset-6 col-md-3 marginTop2 col-xs-offset-3 col-xs-6">
+								<a href="{{exp.website}}" target="_blank">
+									<img src="{{exp.companyLogo}}">
+								</a>
+							</div>
+						</div>
+					</div>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>

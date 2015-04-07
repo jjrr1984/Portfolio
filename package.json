@@ -1,0 +1,10 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "author": "Jose Javier Romero Rivas",
+  "dependencies": {
+    "express": "^4.12.2",
+    "mongoose": "^3.8.24"
+  }
+}
