@@ -19,5 +19,6 @@ app.use('/css',express.static('css'));
 app.use('/angular',express.static('angular'));
 
 require('./routes')(app);	//	Adding routes
-app.listen(8888);
-console.log("Server running at port 8888");
+var port = 8888;
+app.listen(port);
+console.log("Server running at port " + port);
