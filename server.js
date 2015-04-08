@@ -3,7 +3,8 @@ var mongoose = require('mongoose');
 var app = express();
 
 //Connecting to the database
-mongoose.connect('mongodb://' + ( process.env.DBLOCATION || 'localhost/portfolio'));
+var dbLocation = process.env.DBLOCATION || 'localhost/portfolio';
+mongoose.connect('mongodb://' + dbLocation);
 var db = mongoose.connection;
 db.on('error', function(){
 	console.log("Database connection error");
