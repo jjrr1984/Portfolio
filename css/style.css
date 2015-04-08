@@ -74,6 +74,10 @@ body{
 	color: white;
 }
 
+.navbar .nav > li > a:focus{
+	outline: none;
+}
+
 .links > li > a:hover{
 	font-size: 20px;
 	color: white;
