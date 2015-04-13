@@ -2,9 +2,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     uglify:{
-      options:{
-        mangle: false                       // For Angular compatibility
-      },
       target:{
         files:[
           {
