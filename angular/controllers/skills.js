@@ -1,5 +1,5 @@
 var app = angular.module('myPortfolio');
-app.controller('skills',function($scope,$http){
+app.controller('skills',['$scope','$http',function($scope,$http){
 
 	/*
 		@description: it calls back-end to obtain the skills records and group them
@@ -58,4 +58,4 @@ app.controller('skills',function($scope,$http){
     });
 
     $scope.getSkills();
-});
+}]);

@@ -1,5 +1,5 @@
 var app = angular.module('myPortfolio');
-app.config(function($routeProvider,$locationProvider) {
+app.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
 	$locationProvider.html5Mode(true);
     $routeProvider.
       when('/', {
@@ -22,4 +22,4 @@ app.config(function($routeProvider,$locationProvider) {
         templateUrl: '/views/about.html',
         controller: 'about'
       });
-});
+}]);

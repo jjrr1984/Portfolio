@@ -1,5 +1,5 @@
 var app = angular.module('myPortfolio');
-app.controller('main',function($http,$scope){
+app.controller('main',['$http','$scope',function($http,$scope){
 
 	/*
 		@description: it says if the cookies message has to be shown or not
@@ -163,4 +163,4 @@ app.controller('main',function($http,$scope){
 	$scope.nLoads = 0;	//	It indicates the number of calls to the backend that are in progress
 	$scope.language = $scope.getLanguage();
 	$scope.getLabels();
-});
+}]);
