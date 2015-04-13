@@ -8,17 +8,12 @@ module.exports = function(grunt) {
       target:{
         files:[
           {
-            expand: true,                   // Enable dynamic expansion.
-            cwd: 'angular/',                // Src matches are relative to this path.
-            src: ['**/*.js'],               // Actual pattern(s) to match.
-            dest: 'angular/',               // Destination path prefix.
-            ext: '.min.js',                 // Dest filepaths will have this extension.
-            extDot: 'first'                 // Extensions in filenames begin after the first dot
+            'angular/all.min.js': ['angular/**/*.js']
           }
         ]
       }
     },
-    clean: ["angular/**/*.min.js"]
+    clean: ["angular/all.min.js"]
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
