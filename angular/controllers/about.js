@@ -1,4 +1,4 @@
 var app = angular.module('myPortfolio');
-app.controller('about',function($scope){
+app.controller('about',['$scope',function($scope){
 	$scope.$parent.tab = 'about';
-});
+}]);

@@ -1,5 +1,5 @@
 var app = angular.module('myPortfolio');
-app.controller('experience',function($scope,$http){
+app.controller('experience',['$scope','$http',function($scope,$http){
 
 	/*
 		@description: it calls back-end to obtain the experience records
@@ -24,4 +24,4 @@ app.controller('experience',function($scope,$http){
 
 	$scope.getExperience();
 
-});
+}]);
