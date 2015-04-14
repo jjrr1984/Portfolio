@@ -55,6 +55,6 @@ module.exports = function(app){
 		@description: the root service
 	*/
 	app.get('*',function(req,res){
-		res.sendFile(__dirname + '/views/index.html');
+		res.sendFile(__dirname + '/views/index.min.html');
 	});
 };
