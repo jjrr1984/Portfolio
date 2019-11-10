@@ -5,7 +5,7 @@
   "author": "Jose Javier Romero Rivas",
   "dependencies": {
     "express": "^4.12.2",
-    "mongoose": "^3.8.24"
+    "mongoose": ">=5.7.5"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
